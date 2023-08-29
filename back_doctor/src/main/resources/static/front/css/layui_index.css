@@ -1,0 +1,14 @@
+
+/*设置layui 设配 index的css*/
+#page{
+   min-width: 800px;
+}
+
+.layui-laypage-count{
+    background-color: #dddee0 !important;
+}
+
+/*关闭框的layui css*/
+/*.layui-layer-setwin{*/
+/*     z-index: 999;*/
+/*}*/

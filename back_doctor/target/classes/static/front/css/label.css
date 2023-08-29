@@ -1,0 +1,64 @@
+    .label_g{
+        position: absolute;
+        z-index: 100;
+        /* top: -5rem; */
+        left: 17rem;
+        display: none;
+    }
+    .my_labels{
+		  display: inline-block;
+		    width: 38rem;
+		    height: 13rem;
+		    background-color: #b6743f;
+		    position: relative;
+		    border-radius: 1rem;
+    }
+
+    .my_labels .lg{
+        display: inline-block;
+        padding: 1rem 0;
+        text-indent: 0.7rem;
+
+    }
+
+
+
+    .my_labels .my_label{
+        padding:0.5rem;
+        cursor: pointer;
+        /*禁用的颜色*/
+        /*background-color: #a8a8a8;*/
+        background-color: #51aded;
+        color: white;
+        font: 0.8rem Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+    }
+    
+       .label_click{
+	     background-color:#a8a8a8 !important;
+	   }
+	   
+	   .i_click{
+	      color:#a8a8a8 !important;
+	   }
+
+    .label_g i {
+        margin-left: -0.6rem;
+        color: #51aded;
+    }
+
+    .label_g i:before {
+        content: "\e623";
+    }
+
+    .sjx_l{
+        width: 0;
+        height: 0;
+        display: inline-block;
+        border-right: 1rem solid #b6743f;
+        border-bottom: 1rem solid transparent;
+        border-top:1rem solid transparent;
+        border-left: 1rem solid transparent;
+        position: relative;
+		left: 0.3rem;
+		top: 2.3rem;
+   }

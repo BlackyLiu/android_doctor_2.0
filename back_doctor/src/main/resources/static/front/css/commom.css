@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    position: relative;
+    /*height: 100%;*/
+    background-color: #dddee0;
+    overflow-x: hidden;
+}
+
+/* 代码的格式 */
+pre {
+    margin: 10px 0;
+    padding: 10px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    border-left-width: 6px;
+    background-color: #F2F2F2;
+    color: #333;
+    font-family: Courier New;
+    font-size: 12px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "microsoft yahei Light";
+}
+
+
+.g{
+    display: inline-block;
+    /*position: relative;*/
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.b1{
+    background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+    -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+    -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s linear infinite;
+    /*font-size: 22px;*/;
+}
+
+
+/*登录*/
+.login_div .layui-icon{ font-size:16px !important;}
+.mag0{ margin:0 !important; }
+::selection { background: #ff5722; color: #fff; }
+.layui-red{ color:#f00 !important; font-weight:bold;}
+.layui-blue{ color:#01AAED !important;}
+.login_div{ background-size: 100%;width: 20%;height: 20%;position: fixed;
+    z-index: 100;
+    left: 40%;
+    top: 42%;
+    display: none;
+}
+.login_div form.layui-form{ position:absolute; left:50%; top:50%; margin:-150px 0 0 -150px;padding:0 20px; width:300px; height:335px;  -webkit-box-sizing:border-box;-moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; background:#fff;-webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; box-shadow:0 0 50px #009688;}
+.login_face{ margin:-55px auto 20px; width:100px; height:100px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; border:5px solid #fff; overflow:hidden;box-shadow:0 0 30px #009688;}
+.login_face img{ width:100%;}
+.login_div .layui-form-item{ position:relative;}
+.login_div .layui-form-item label{ position:absolute; color:#757575; left:10px; top:9px; line-height:20px; background:#fff; padding:0 5px; font-size:14px; cursor:text;}
+.login_div .layui-form-item.layui-input-focus label{ top:-10px; font-size:12px; color:#ff6700;}
+.login_div .layui-form-item.layui-input-active label{ top:-10px; font-size:12px;}
+.login_div .layui-input::-webkit-input-placeholder{color:#fff;}
+.login_div .layui-input::-moz-placeholder{color:#fff;}
+.login_div .layui-input:-ms-input-placeholder{color:#fff;}
+.login_div .layui-input::placeholder{color:#fff;}
+.login_div .layui-form-item.layui-input-focus input{ border-color:#ff6700 !important;}
+.login_div .layui-input-focus .layui-input::-webkit-input-placeholder{color:#757575;}
+.login_div .layui-input-focus .layui-input::-moz-placeholder{color:#757575;}
+.login_div .layui-input-focus .layui-input:-ms-input-placeholder{color:#757575;}
+.login_div .layui-input-focus .layui-input::placeholder{color:#757575;}
+.login_div .seraph{ font-size:30px; text-align:center;}
+.login_div .seraph.icon-qq:hover{ color:#0288d1;}
+.login_div .seraph.icon-wechat:hover{ color:#00d20d;}
+.login_div .seraph.icon-sina:hover{ color:#d32f2f;}
+.layui-block {
+    width: 100% !important;
+}
+.login_div .close{
+     position: absolute;
+    left: 93%;
+    top: 1%;
+    left: 85%;
+    top: 5%;
+    font-size: 29px !important;
+    z-index: 999;
+    cursor: pointer;
+}
+.imgCode{ position:relative;}
+#imgCode img{ position:absolute; top:1px; right:1px; cursor:pointer;}
+
+/*注册   */
+.reg_flag{
+    /*display: block;*/
+}
+.reg_flag .layui-form{
+    height: 400px !important;
+}
+
+.send{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+
+@keyframes masked-animation {
+    0% {
+        background-position: 0  0;
+    }
+    100% {
+        background-position: -100%  0;
+    }
+}
+#main {
+    position: relative;
+    height: 100%;
+
+}
+
+/*头部公共部分*/
+#top {
+    position: relative;
+    width: 100%;
+    height: 4.5rem;
+    background-color: #1a1a1ab3;
+}
+
+#top .head {
+    /*height: 67px;*/
+    height: 4rem;
+    float: left;
+    left: 20%;
+    position: relative;
+    border-radius: 40px;
+}
+
+#top .xz ul>li{
+    float: left;
+}
+#top .t1, .t2 {
+    position: absolute;
+    left: 10%;
+}
+
+#top  .t2 {
+    top: 50%;
+}
+
+#top .xz {
+    width: 70%;
+    position: relative;
+    left: 20%;
+}
+
+#top .xz ul {
+    height: 100%;
+    text-align: center;
+    line-height: 65px;
+    font-family: cursive;
+}
+
+#top .xz ul > li {
+/*     width: 5%; */
+    color: white;
+    /*font-size: 25px;*/;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#top .xz ul > li:hover {
+    background-color: #5a1500;
+    border-radius: 30px;
+}
+
+
+/*用于标题栏切换*/
+.liClick {
+    border-radius: 1.875rem;
+    background-color: #5a1500;
+}
+
+/*搜索的css*/
+#top .ss {
+    position: relative;
+    left: -30%;
+    top: -36%;
+}
+
+#top .ss .ss_img {
+    height: 20px;
+    position: relative;
+    left: -13%;
+}
+
+#top .ss .ss_btn {
+    width: 81px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    background-color: #4a89bf;
+    border-color: #4a89bf;
+    position: relative;
+    left: -8%;
+}
+
+#top .ss .ss_it {
+    border: none;
+    border-radius: 9px;
+    width: 200px;
+    height: 40px;
+    /*font-size: 14px;*/;
+    text-indent: 10px;
+    font-family: cursive;
+}
+
+
+#top .bs {
+    color: white;
+    /*font-size: 22px;*/;
+    position: absolute;
+    top: 23%;
+    right: 5%;
+}
+
+
+#top .bs .reg, .login {
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+#top .bs .c1 {
+   height: 1.8rem;
+    border-radius: 1rem;
+}
+
+#top .dl {
+    cursor: pointer;
+    /* display: none; */
+}
+
+#top .xl {
+    position: absolute;
+    right: 2%;
+    top: 83%;
+    z-index:999;
+    display: none;
+}
+
+#top .xl .sjx {
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /*border-bottom: 10px solid ghostwhite;*/
+    border-bottom: 10px solid #808080ab;
+    position: relative;
+    left: 60%;
+}
+
+#top .xl .xuanxiang {
+    width: 9rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#top .xl .gr {
+    width: 100%;
+    /*background-color: red;*/
+    color: black;
+    font-size: 1rem;;
+    /*text-align: center;*/
+    text-indent: 1rem;
+    cursor: pointer;
+    /*margin: 5px 0;*/
+    /*margin-bottom: 5px;*/
+    height: 40px;
+    line-height: 40px;
+}
+
+#top .xl .gr:hover {
+    background-color: rgba(75, 75, 75, 0.72);
+}
+
+#top .xl .gr .tb {
+    height: 20px;
+    padding-right: 8px;
+    position: relative;
+    top: -2px;
+}
+
+/*右下角固定bar*/
+#permanent{position: fixed;right: 4%;bottom: 13%;z-index: 11;}
+#permanent ul li{background-color: rgb(251,251,251);margin-top: 2px;}
+#permanent ul li a{display: block;padding: 10px 12px;}
+#permanent ul li i{/*font-size: 30px;*/;color: blue;}
+
+/*尾部*/
+#buttom{
+    clear: both;
+    background-color: rgba(20, 17, 16, 0.6);
+    height: 50px;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+/*动画live2d的效果*/
+#live2d{
+     cursor: pointer;
+}
+
+
+/*名言*/
+.mingyan {
+    color: black;
+    font-family: cursive;
+    max-height: 800px;
+    /*font-size: 28px;*/
+    z-index: -20;
+}
+/*垂直方向，从左向右*/
+.mingyan .jz{
+    writing-mode:vertical-lr;
+    max-width: 8rem;
+    max-height: 23rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.mingyan .rw{
+    color: red;
+    text-indent: 1.5em;
+}
+
+
+/*登录窗口的过渡*/
+.icons li, .icons li:hover, .login_div .seraph, .login_div .seraph:hover, .login_div .layui-form-item.layui-input-focus label, .login_div .layui-form-item label, .login_div .layui-form-item.layui-input-focus input, .login_div .layui-form-item input {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+/*大屏幕*/
+@media screen and (max-width: 2000px) {
+    /*html{background-color: aqua;}*/
+    #top{
+        font-size: 22px;
+    }
+    #top .ss .ss_it{
+         font-size: 14px;
+    }
+    #top .xz ul > li {
+      /*   width: 5%; */
+    }
+    #top .ss .ss_btn{
+        top: 4px;
+    }
+    #top .ss {
+        left: -19%;
+    }
+    .mingyan{
+        font-size: 26px;
+    }
+}
+
+
+/*小屏幕 1366 x 768*/
+@media screen and (max-width: 1367px) {
+    /*html{background-color: antiquewhite}*/
+    #top{
+        font-size: 19px;
+    }
+    #top .t1, .t2 {
+        left: 13%;
+    }
+    #top .xz ul > li {
+        width: 7%;
+    }
+    #top .ss {
+        left: 53%;
+        top: -84%;
+    }
+    #top .ss .ss_it{
+         width: 174px;
+    }
+}
+
+/*解决ipad*/
+@media screen and (max-width: 768px){
+    #top{
+        font-size: 1rem;
+    }
+    #top .t1, .t2 {
+        left: 18%;
+    }
+    #top .xz ul {
+        font-size: 1rem;
+    }
+    #top .xz{
+        left: 23%;
+    }
+}
+
+
+

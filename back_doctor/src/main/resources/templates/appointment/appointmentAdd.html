@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<title>Add appointment page</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="/layres/favicon.ico">
+	<link rel="stylesheet" href="/layres/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="/layres/css/public.css" media="all" />
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">Name of the reservation person</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input appointmentName" id="appointmentName" lay-verify="required" placeholder="Please enter the name of the reservation person.">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">Doctor's appointment</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input beAppointmentName" id="beAppointmentName" lay-verify="required" placeholder="Please enter an appointment doctor.">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">Medical record</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input medicalRecord" id="medicalRecord" lay-verify="required" placeholder="Please enter the medical record.">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">prescription</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input prescription" id="prescription" lay-verify="required" placeholder="Please enter a prescription">
+		</div>
+	</div>
+    <input type="hidden" id="id">
+	<div class="layui-form-item layui-row layui-col-xs12">
+		<div class="layui-input-block">
+			<button class="layui-btn layui-btn-sm add" lay-submit="" lay-filter="addAppointment">add</button>
+			<button class="layui-btn layui-btn-sm edit" lay-submit="" lay-filter="editAppointment">edit</button>
+			<button type="reset" class="layui-btn layui-btn-sm layui-btn-primary">Cancellation</button>
+		</div>
+	</div>
+</form>
+<script type="text/javascript" src="/req.js"></script>
+<script type="text/javascript" src="/layres/layui/layui.js"></script>
+<script type="text/javascript" src="/js/appointment/appointmentAdd.js"></script>
+</body>
+</html>

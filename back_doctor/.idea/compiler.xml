@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="小学生考试系统" />
+        <module name="springboot_mybatis_plus_common" />
+        <module name="car_sale" />
+        <module name="back_doctor" />
+        <module name="springboot_upload_mybatis_plus" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="back_doctor" options="-parameters" />
+      <module name="car_sale" options="-parameters" />
+      <module name="springboot_mybatis_plus_common" options="-parameters" />
+      <module name="springboot_upload_mybatis_plus" options="-parameters" />
+      <module name="小学生考试系统" options="-parameters" />
+    </option>
+  </component>
+</project>

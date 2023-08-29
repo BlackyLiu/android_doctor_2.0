@@ -1,0 +1,46 @@
+html{
+	 background-color: #9e9e9e45;
+	
+}
+
+.right {
+    position: absolute;
+    top: 5%;
+    right: -39%;
+    width: 34%;
+}
+
+ 
+/*  #middle .right {
+    margin-left: 20px;
+    float: left;
+    height: 200px;
+    width: 20%;
+    margin-bottom: 1rem;
+} */
+#main{
+	 position: relative;
+}
+
+.mingyan {
+    position: absolute;
+    left: 8rem;
+    top: 11rem;
+}
+
+#middle {
+    margin-top: 20px;
+    position: relative;
+    width: 50%;
+    background: white;
+    left: 20%;
+}
+
+.syhf {
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+#buttom {
+    top: 0.5rem;
+}

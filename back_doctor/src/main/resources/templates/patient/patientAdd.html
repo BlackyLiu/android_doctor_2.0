@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<title>Add user page</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="/layres/favicon.ico">
+	<link rel="stylesheet" href="/layres/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="/layres/css/public.css" media="all" />
+</head>
+<body class="childrenBody">
+<form class="layui-form" style="width:80%;">
+
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">Unique medical number</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input medicalTreatmentNo" id="medicalTreatmentNo" lay-verify="required" placeholder="Please enter a unique medical number.">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">邮箱</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input email" id="email" lay-verify="required" placeholder="Please enter a email.">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">password</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input password" id="password" lay-verify="required" placeholder="Please enter a password">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">realName</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input realName" id="realName" lay-verify="required" placeholder="Please enter a realName">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">Please enter a price</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input price" id="price" lay-verify="required" placeholder="Please enter a price">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">Please enter a contactInformation</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input contactInformation" id="contactInformation" lay-verify="required" placeholder="Please enter a contactInformation">
+		</div>
+	</div>
+   	<div class="layui-form-item layui-row layui-col-xs12">
+		<label class="layui-form-label">birthday</label>
+		<div class="layui-input-block">
+			<input type="text" class="layui-input birthday" id="birthday" lay-verify="required" placeholder="Please enter a birthday">
+		</div>
+	</div>
+    <input type="hidden" id="id">
+	<div class="layui-form-item layui-row layui-col-xs12">
+		<div class="layui-input-block">
+			<button class="layui-btn layui-btn-sm add" lay-submit="" lay-filter="addPatient">add</button>
+			<button class="layui-btn layui-btn-sm edit" lay-submit="" lay-filter="editPatient">edit</button>
+			<button type="reset" class="layui-btn layui-btn-sm layui-btn-primary">Cancellation</button>
+		</div>
+	</div>
+</form>
+<script type="text/javascript" src="/req.js"></script>
+<script type="text/javascript" src="/layres/layui/layui.js"></script>
+<script type="text/javascript" src="/js/patient/patientAdd.js"></script>
+</body>
+</html>

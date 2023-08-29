@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.base.activity">
+    <!-- 声明该应用自身所拥有的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.base.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ysheng"
+        android:label="@string/app_name"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_Main">
+
+        </activity>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_Main">
+        </activity>
+
+        <activity
+            android:name=".MyInfoActivity"
+            android:label="@string/title_activity_Main">
+        </activity>
+
+
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_Main">
+
+        </activity>
+
+        <activity
+            android:name=".SessionActivity"
+            android:label="@string/title_activity_Main">
+
+        </activity>
+
+
+        <activity
+            android:name=".ChangeInfoActivity"
+            android:label="@string/title_activity_Main"></activity>
+
+        <activity
+            android:name=".AppointmentActivity"
+            android:label="@string/title_activity_Main"></activity>
+
+
+        <activity
+            android:name=".AppointmentInfoActivity"
+            android:label="@string/title_activity_Main"></activity>
+
+
+        <activity
+            android:name=".AddAppointmentActivity"
+            android:label="@string/title_activity_Main"></activity>
+
+
+        <activity
+            android:name=".DoctorAppointmentActivity"
+            android:label="@string/title_activity_Main"></activity>
+
+        <activity
+            android:name=".ActivityAppointmentFinish"
+            android:label="@string/title_activity_Main"></activity>
+
+        <activity
+            android:name=".AppointmentRecordsActivity"
+            android:label="@string/title_activity_Main"></activity>
+    </application>
+
+</manifest>

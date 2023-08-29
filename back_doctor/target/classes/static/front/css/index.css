@@ -1,0 +1,378 @@
+/*主体css*/
+#middle {
+    position: relative;
+    left: 2%;
+    margin-top: 30px;
+    /*float: left;*/
+    /*width: 95%;*/
+}
+
+#middle .left {
+    position: relative;
+    width: 20%;
+    min-height: 100px;
+    border-radius: 30px;
+    float: left;
+}
+
+#middle .left .tj{
+	  background-color: white;
+}
+
+#middle .left .tj div.ul {
+    color: black;
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+}
+
+#middle .left .tj div.ul > div.li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    /*background-color: #5a1500;*/
+}
+
+#middle  .mid{
+     float: left;
+     /*background-color: red;*/
+     width: 40% ;
+     margin-left: 2%;
+     /*height: 1000px;*/
+}
+
+#banner{
+     border-radius: 30px;
+}
+
+#middle  .wztj{
+    position: relative;
+    margin-top: 10px;
+}
+
+#middle  .wztj .article{
+    width: 99%;
+    height: 13.5rem;
+    background-color: white;
+    margin-bottom: 10px;
+    position: relative;
+    border-left: 5px solid transparent;
+    cursor: pointer;
+}
+
+#middle  .wztj .article:hover {
+    box-shadow: #ccc 1px 1px 4px 4px;
+    border-left: 5px solid cornflowerblue;
+}
+
+#middle  .wztj .article header {
+    margin-left: 20px;
+    padding: 20px 0 14px 0;
+}
+
+#middle  .wztj .article header>span {
+    background-color: #51aded;
+    padding: 3px 8px;
+    color: white;
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;
+}
+
+#middle  .wztj  .article header i {
+    margin-left: -6px;
+    color: #51aded;
+}
+
+#middle  .wztj  .article header h3 {
+    display: inline;
+}
+
+#middle  .wztj  .article  .focus {
+    float: left;
+    width: 220px;
+    margin-left: 20px;
+}
+
+#middle  .wztj  .article  .focus-a {
+    overflow: hidden;
+    width: 200px;
+    height: 123px;
+    display: block;
+}
+
+#middle  .wztj  .article:hover {
+    transform: scale(1.1);
+}
+
+#middle  .wztj .article {
+    transition: transform 1s;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+#middle  .wztj  .article .t{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 27rem;
+    /* height: 1rem; */
+    white-space: nowrap; 
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+#middle  .wztj  .article  .note {
+    color: #526163;
+    line-height: 24px;
+    font-style: normal;
+    margin-right: 20px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    text-indent: 2em;
+    -webkit-box-orient: vertical;
+    height:7rem;
+}
+
+#middle  .wztj  .article .auth-span {
+    position: absolute;
+    right: 0;
+    display: block;
+    bottom: 0;
+    margin-bottom: 0.625rem;
+}
+
+#middle  .wztj  .article .muted {
+    font-size: 13px;
+    margin-right: 20px;
+    color: #999;
+}
+
+#middle  .wztj  .article .muted .fa {
+    font-size: 1.23em;
+}
+
+/*中间右边start*/
+#middle  .right{
+      margin-left: 20px;
+     float: left;
+    /*height: 200px;*/
+    width: 20%;
+    margin-bottom: 1rem;
+}
+
+#middle  .right .syc-right {
+    /*float: right;*/
+    /*width: 27%;*/
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    width: 90%;
+}
+
+#middle  .right  .enlargeImg {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border-radius: 50%;
+}
+
+#middle  .right .syc-right h2 {
+    font-size: 22px;
+    margin: 10px;
+    color: #89919a;
+    font-weight: normal;
+    padding-bottom: 10px;
+    line-height: 46px;
+}
+
+#middle  .right .syc-right p {
+    font-size: 12px;
+    padding: 0 0 0 20px;
+    line-height: 28px;
+    font-style: normal;
+}
+
+#middle  .right .card-contact {
+    margin: 15px;
+}
+
+#middle  .right .card-contact li {
+    width: 25%;
+    float: left;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#middle  .right .card-contact li i {
+    font-size: 50px;
+    transition: opacity 1s;
+}
+
+#middle  .right .right-card {
+    margin-top: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    /*width: 27%;*/
+}
+
+#middle  .right  .square {
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 15px;
+    width: 90%;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.notice ul{
+     height: auto;
+}
+
+.notice li {
+    padding: 8px 15px 6px 25px;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-left: 10px;
+    position: relative;
+    width: 80%;
+    /*display:block;*/
+    transition: all .5s;
+}
+
+.notice li a {
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notice li:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    border-radius: 50%;
+    left: 10px;
+    top: 17px;
+}
+
+.notice li span {
+    float: right;
+    margin-right: 5px;
+}
+
+.square::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px!important;
+    width: 100px;
+    background-color: #51aded;
+    content: '';
+    transition: width 1s;
+    -moz-transition: width 1s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+}
+
+.notice li:hover {
+    box-shadow: 0 0 10px blue;
+}
+
+.right-card:hover .square:first-child::after{
+    width: 200px;
+}
+
+/*右边end*/
+.mingyan{
+    position: relative;
+    left: 5.3%;
+    top: 3em;
+}
+
+
+
+
+@media screen and (max-width: 1300px){
+    .mingyan{
+        display: none;
+    }
+    #middle .right{
+        width: 23%;
+    }
+}
+
+/*当屏幕最大宽度等于1100的时候*/
+/*解决ipad pro的布局*/
+@media screen and (max-width: 1100px){
+    #top .t1, .t2 {
+        left: 14%;
+    }
+    #top .ss {
+        display: none;
+    }
+    /*内容列表下的字体*/
+    #middle .wztj .article .muted{
+        font-size: 13px !important;
+        margin-right: 10px !important;
+    }
+    #middle .right{
+        width: 25%;
+    }
+    #permanent{
+        display: none;
+    }
+}
+
+/*解决ipad*/
+@media screen and (max-width: 768px){
+    #middle .right {
+        width: 32%;
+    }
+
+    #middle .wztj .article{
+        height: 11.5rem;
+    }
+    #middle .wztj .article header{
+        margin-left: 5px;
+        padding:5px 0 5px 0;
+    }
+    #middle .wztj .article header>span{
+        padding: 0px;
+    }
+    /*内容图片区域*/
+    #middle .wztj .article .focus  {
+        margin-left: 5px;
+    }
+    #middle .wztj .article .focus img{
+         height: 123px;
+        width: auto;
+    }
+    #middle .wztj .article .note{
+        margin: 0px;
+    }
+    #middle .wztj .article .muted {
+        font-size: 11px !important;
+        margin-right: 1px !important;
+    }
+    #middle .wztj .article .auth-span{
+        right: 0.2rem;
+        margin-bottom: 0.3rem;
+    }
+    #page{
+         position: relative;
+         right: 20%;
+    }
+}

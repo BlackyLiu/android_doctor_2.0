@@ -1,0 +1,64 @@
+# mysql
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100000000
+      max-request-size: 100000000
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySQL配置
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/android_doctor?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&useSSL=false&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+    #oracle配置
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  resources:
+    static-locations: classpath:/static/,classpath:/views/
+  rabbitmq:
+    port: 5672
+    virtual-host: /
+    host: localhost
+    username: admin
+    password: admin
+#    publisher-confirm-type: correlated
+#    publisher-returns: true
+#    listener:
+#      simple:
+#        acknowledge-mode: manual
+#        concurrency: 1
+#        max-concurrency: 5
+#        prefetch: 1
+
+
+mybatis:
+  mapperLocations: classpath:mappers/**/*.xml
+
+
+#  日志的方式打印sql
+logging:
+  level:
+    com.base.service: DEBUG
+    com.base.mapper: DEBUG
+    com.base.tomapper: DEBUG
+
+
+http_pool:
+  max_total: 200
+  default_max_per_route: 100
+  connect_timeout: 5000
+  connection_request_timeout: 1000
+  socket_timeout: 65000
+  validate_after_inactivity: 2000
+
+
+min:
+  io:
+    endpoint: http://127.0.0.1:9000
+    #    accessKey: zbsgqlfWr2mRDvmR
+    #    secretKey: qM7epXFkvd1SIfFnYRmoLrpkXC81hTlC
+    accessKey: minioadmin
+    secretKey: minioadmin

@@ -1,0 +1,104 @@
+.replyList span.layui-laypage-count{
+    background-color: #3eff9200 !important;
+}
+
+.syhf{
+    font-size: 1.4rem;
+    margin-left: 0.3rem;
+    margin-top: 0.4rem;
+}
+
+.replyList{
+    /*background-color: #7e7e7e70;*/
+    position: relative;
+}
+.reply_cont{
+    position: relative;
+    background-color: aliceblue;
+    text-indent: 1rem;
+}
+
+/* .reply_cont:nth-last-child(1){
+	    padding-bottom: 1rem;
+} */
+
+.replyList img {
+    width: 2.5rem;
+    border-radius: 1.2rem;
+}
+.replyList .reply_text .hf{
+    font-size: 0.7rem;
+    color:#7e7e7e70;
+}
+.replyList .reply_date{
+    margin-left:60%
+}
+.replyList .reply_date .sc,.hf,.sq,.sc{
+    color: blue;
+    cursor: pointer;
+}
+
+.replyList .reply_date .hf{
+	 margin-right: 0.3rem;
+}
+
+.replyList .reply_date .sc{
+}
+
+.replyList .reply_date .sq{
+    margin-left: 0.3rem;
+}
+.replyList .child_reply .g{
+    display: block;
+}
+.replyList .child_reply .g:nth-child(1){
+    margin-top: 0.3rem;
+    padding-top: 0.5rem;
+}
+.replyList .child_reply{
+    margin-left: 6rem;
+    background-color: #3eff9238;
+    padding-bottom: 1rem;
+}
+.replyList .child_reply .reply_date{
+    margin-left:52%
+}
+
+.replyList .square {
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 10px;
+    padding-top: 12px;
+}
+
+.replyList .square:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px!important;
+    width: 100px;
+    background-color: #51aded;
+    content: '';
+    transition: width 2s;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
+}
+
+.replyList .hfb:hover  .square:first-child::after{
+    width: 200px;
+}
+
+.replyList .hfb  .hf_btn{
+    margin-top: 0.5rem;
+    margin-left: 87%;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #1E9FFF;
+    border-color: #1E9FFF;
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 0.2rem;
+}

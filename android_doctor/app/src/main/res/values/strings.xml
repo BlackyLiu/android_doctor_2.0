@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Shenyi online</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_main_exit">quit</string>
+    <string name="str_reg_title">New user registration</string>
+    <string name="str_reg_pass1">\t\t\tpassword：</string>
+    <string name="str_reg_pass2">Password duplication：</string>
+    <string name="str_reg_save">\t\t\tregister</string>
+    <string name="title_activity_Main">Shenyi online</string>
+    <string name="action_settings">Settings</string>
+    <string name="message">chat</string>
+    <string name="contacts">address book</string>
+</resources>

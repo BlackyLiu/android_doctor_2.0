@@ -1,0 +1,46 @@
+{
+  "contentManagement": [
+
+{
+  "title": "Administrator management",
+  "icon": "&#xe639;",
+  "href": "/jump/toAdminList",
+  "spread": false,
+  "roleName":["ALL"]
+},
+    {
+      "title": "Doctor management",
+      "icon": "&#xe635;",
+      "href": "/jump/toDoctorList",
+      "spread": false,
+      "roleName":["ALL"]
+    }
+  ,
+    {
+      "title": "Patient management",
+      "icon": "&#xe636;",
+      "href": "/jump/toPatientList",
+      "spread": false,
+      "roleName":["ALL"]
+    }
+  ,
+    {
+      "title": "Chat management",
+      "icon": "&#xe637;",
+      "href": "/jump/toChatList",
+      "spread": false,
+      "roleName":["ALL"]
+    }
+  ,
+    {
+      "title": "Appointment management",
+      "icon": "&#xe638;",
+      "href": "/jump/toAppointmentList",
+      "spread": false,
+      "roleName":["ALL"]
+    }
+
+  ]
+}
+
+

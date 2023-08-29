@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="loginHtml" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<title>Android hospital system login</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" href="/layres/favicon.ico">
+	<link rel="stylesheet" href="/layres/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="/layres/css/public.css" media="all" />
+</head>
+<body class="loginBody">
+	<form class="layui-form">
+<!--		<div class="login_face"><img src="/layres/images/face.jpg" class="userAvatar"></div>-->
+		<div class="layui-form-item input-item">
+			<label for="userName">user name</label>
+			<input type="text" placeholder="Please enter a user name" autocomplete="off" id="username" class="layui-input" lay-verify="required">
+		</div>
+		<div class="layui-form-item input-item">
+			<label for="password">password</label>
+			<input type="password" placeholder="Please enter the password." autocomplete="off" id="password" class="layui-input" lay-verify="required">
+		</div>
+		<div class="layui-form-item input-item" id="imgCode">
+			<label for="code">Verification Code</label>
+			<input type="text" placeholder="Please enter the verification code." autocomplete="off" id="code" class="layui-input">
+			<!-- <img src="/layres/images/code.jpg"> -->
+			<img src="/code">
+		</div>
+		<div class="layui-form-item">
+			<!-- <button class="layui-btn layui-block"  lay-filter="login" lay-submit>登录</button> -->
+			<button class="layui-btn layui-block" id="login">log in</button>
+		</div>
+		<div class="layui-form-item layui-row">
+			<a href="javascript:;" class="seraph icon-qq layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4"></a>
+			<a href="javascript:;" class="seraph icon-wechat layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4"></a>
+			<a href="javascript:;" class="seraph icon-sina layui-col-xs4 layui-col-sm4 layui-col-md4 layui-col-lg4"></a>
+		</div>
+	</form>
+	<script type="text/javascript" src="/layres/layui/layui.js"></script>
+	<script type="text/javascript" src="/js/login/login.js"></script>
+	<script type="text/javascript" src="/layres/js/cache.js"></script>
+</body>
+</html>

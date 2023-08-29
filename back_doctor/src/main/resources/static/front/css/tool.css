@@ -1,0 +1,60 @@
+/*中间内容部分*/
+.content{
+    display: flex;
+    width: 62%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title{width: 62%;margin: 0 auto;margin-top: 20px;}
+.content .card,.end{
+    box-shadow: 0 0 20px #DFDFDF;
+    width: 24%;
+    height: 230px;
+    margin-top: 15px;
+    transition: all 1s;
+    position: relative;
+    background-color: white;
+}
+
+.end h1,.end p {width: 80%;margin:  0 auto;}
+.end .more{color: #008FF4;margin-top: 30px;}
+.end .more-content{color: #555;margin-top:20px; }
+.end .wait{color: #777;margin-top:20px; }
+
+.content .card:hover{ background-color: rgb(203, 203, 203);}
+
+.card .card-title{text-align: center;font-weight: bold;margin-top: 15px;}
+.card .uitl-icon{text-align: center;font-weight: normal;height: 80px;overflow: hidden;}
+.card .uitl-icon svg{font-size: 80px;}
+.card .card-content{padding:0 20px 10px 20px;text-indent: 2em;}
+.card .go{float: right;margin-right: 20px;width: 80px;}
+.card .card-opt{position: absolute;bottom: 10px;width: 80%;left: 10%;display: flex;}
+.card .card-opt a{margin: 0 15px;}
+.card .card-opt a i{font-size: 25px;}
+
+/*小屏幕 1366 x 768*/
+@media screen and (max-width: 1366px) {
+    .content,.title{
+        width: 88%;
+    }
+
+}
+/*手机*/
+@media screen and (max-width: 980px) {
+    .content .card{height: 200px;}
+    .content .card .card-opt{display: none;}
+    .end .more,.end .wait{font-size: 20px;margin-top: 20px;}
+    .end .more-content{font-size: 13px;}
+}
+
+
+
+/*名言部分*/
+.mingyan{
+     position: absolute;
+     top: 26%;
+     left: 86%;
+}
+
+

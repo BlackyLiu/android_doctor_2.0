@@ -1,0 +1,257 @@
+/* 已经点击过的样式 */
+.clicked{
+  color: red !important;	
+}
+
+.other-article span{
+	 cursor: pointer;
+}
+
+.mingyan{
+    position: relative;
+    left: 3.3%;
+    top: 3em;
+    float: left;
+}
+
+#middle {
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+    margin-top: 20px;
+    position: relative;
+    /*background-color: red;*/
+}
+
+
+#middle .content-left {
+    float: left;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    margin-left: 10%;
+}
+
+
+.auto-93 {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.content-left .square {
+    padding: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 10px;
+    padding-top: 12px;
+}
+
+.content-left .square::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px!important;
+    width: 100px;
+    background-color: #51aded;
+    content: '';
+    transition: width 2s;
+    -moz-transition: width 2s;
+    -webkit-transition: width 2s;
+    -o-transition: width 2s;
+}
+
+
+#middle .content-left .article-body {
+    margin: 0 auto;
+    width: 95%;
+}
+
+#middle .content-left .article-title {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.p_head {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #999;
+}
+
+.p_head .option-item {
+    margin-left: 20px;
+    position: relative;
+}
+
+.p_head span, .p_head span a {
+    font-size: 15px;
+    color: #999;
+    line-height: 24px;
+}
+
+.p_head span i {
+    font-size: 1.14em;
+}
+
+.article-text {
+    overflow-y: auto;
+    max-height: 900px;
+    color: #333;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.other-article {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+#middle  .right{
+    margin-left: 20px;
+    float: left;
+    /*height: 200px;*/
+    width: 20%;
+}
+
+#middle  .right .syc-right {
+    /*float: right;*/
+    /*width: 27%;*/
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    /*width: 127%;*/
+}
+
+#middle  .right  .enlargeImg {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border-radius: 50%;
+}
+
+#middle  .right .syc-right h2 {
+    font-size: 22px;
+    margin: 10px;
+    color: #89919a;
+    font-weight: normal;
+    padding-bottom: 10px;
+    line-height: 46px;
+}
+
+#middle  .right .syc-right p {
+    font-size: 12px;
+    padding: 0 0 0 20px;
+    line-height: 28px;
+    font-style: normal;
+}
+
+#middle  .right .card-contact {
+    margin: 15px;
+}
+
+#middle  .right .card-contact li {
+    width: 25%;
+    float: left;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#middle  .right .card-contact li i {
+    font-size: 50px;
+    transition: opacity 1s;
+}
+
+#middle  .right .right-card {
+    margin-top: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    /*width: 27%;*/
+}
+
+#middle  .right  .square {
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 15px;
+    width: 90%;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.notice ul{
+    height: auto;
+}
+
+.notice li {
+    padding: 8px 15px 6px 25px;
+    border-radius: 4px;
+    margin-top: 8px;
+    margin-left: 10px;
+    position: relative;
+    width: 80%;
+    /*display:block;*/
+    transition: all .5s;
+}
+
+.notice li a {
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.notice li:before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #000;
+    border-radius: 50%;
+    left: 10px;
+    top: 17px;
+}
+
+.notice li span {
+    float: right;
+    margin-right: 5px;
+}
+
+.square::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px!important;
+    width: 100px;
+    background-color: #51aded;
+    content: '';
+    transition: width 1s;
+    -moz-transition: width 1s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+}
+
+.notice li:hover {
+    box-shadow: 0 0 10px blue;
+}
+
+.right-card:hover .square:first-child::after{
+    width: 200px;
+}
+
+.article-text img{
+	 width:95%;
+}
+
+#buttom{
+    top: 0.5rem;
+}
+
+

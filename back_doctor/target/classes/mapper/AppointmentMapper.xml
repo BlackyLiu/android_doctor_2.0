@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.base.mapper.AppointmentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.base.bean.Appointment">
+        <id column="id" property="id" />
+        <result column="appointment_id" property="appointmentId" />
+        <result column="be_appointment_id" property="beAppointmentId" />
+        <result column="appointment_name" property="appointmentName" />
+        <result column="be_appointment_name" property="beAppointmentName" />
+        <result column="medical_record" property="medicalRecord" />
+        <result column="prescription" property="prescription" />
+        <result column="status" property="status" />
+        <result column="appointment_time" property="appointmentTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, appointment_id, be_appointment_id, appointment_name, be_appointment_name, medical_record, prescription, status, appointment_time, create_time, update_time
+    </sql>
+
+</mapper>

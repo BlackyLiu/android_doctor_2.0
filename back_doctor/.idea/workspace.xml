@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf9a55ea-9b76-4deb-8b4a-6ed7e86fdced" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven_repository" />
+        <option name="userSettingsFile" value="D:\soft\maven\apache-maven-3.6.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MJjOc1TRqxiZmQgYhL1xvnXiaT" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/program/Android/doctor/back_doctor&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  }
+}</component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\res\project\android\doctor\back_doctor\src\main\resources\static\js" />
+      <recent name="D:\res\project\android\doctor\back_doctor\src\main\resources\templates" />
+      <recent name="D:\code\android\android_doctor\back_doctor\src\main\resources\static\layres\images" />
+      <recent name="D:\code\android\android_doctor\back_doctor\src\main\resources\static\js" />
+      <recent name="D:\code\android\android_doctor\back_doctor\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.base.config" />
+      <recent name="com.base.controller" />
+      <recent name="com.base.to" />
+      <recent name="com.base.util" />
+      <recent name="com.base" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.base.App" />
+      <module name="back_doctor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.base.CodeGenerator" />
+      <module name="back_doctor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.CodeGenerator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.CodeGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf9a55ea-9b76-4deb-8b4a-6ed7e86fdced" name="Changes" comment="" />
+      <created>1677492548198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677492548198</updated>
+      <workItem from="1677492549746" duration="993000" />
+      <workItem from="1677493809850" duration="12650000" />
+      <workItem from="1678082244047" duration="200000" />
+      <workItem from="1678082497319" duration="5047000" />
+      <workItem from="1678809418548" duration="1321000" />
+      <workItem from="1678875136334" duration="5224000" />
+      <workItem from="1691158794748" duration="8360000" />
+      <workItem from="1691232476542" duration="4866000" />
+      <workItem from="1691303259049" duration="597000" />
+      <workItem from="1691384225841" duration="4427000" />
+      <workItem from="1691479288915" duration="2423000" />
+      <workItem from="1691555939785" duration="1198000" />
+      <workItem from="1691647105777" duration="29662000" />
+      <workItem from="1692169323244" duration="762000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

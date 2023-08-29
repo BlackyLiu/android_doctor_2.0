@@ -1,0 +1,90 @@
+{
+	"contentManagement": [
+		{
+			"title": "登录限制管理管理",
+			"icon": "&#xe635;",
+			"href": "/jump/toExperimentLoginLimitList",
+			"spread": false,
+			"roleName":["超级管理员"]
+		},
+		{
+			"title": "用户管理",
+			"icon": "&#xe643;",
+			"href": "/jump/toExperimentUserList",
+			"spread": false,
+			"roleName":["ALL"]
+		},
+		{
+			"title": "教学辅助管理",
+			"icon": "&#xe636;",
+			"href": "/jump/toExperimentDefendList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		},
+			{
+			"title": "维修日志管理",
+			"icon": "&#xe635;",
+			"href": "/jump/toExperimentDefendLogList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		},
+		{
+			"title": "文档租借审核管理管理",
+			"icon": "&#xe636;",
+			"href": "/jump/toExperimentFileExamineList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		},
+		{
+			"title": "电子文档资源管理",
+			"icon": "&#xe637;",
+			"href": "/jump/toExperimentFileResList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		},
+		{
+			"title": "请假管理",
+			"icon": "&#xe638;",
+			"href": "/jump/toExperimentLeaveList",
+			"spread": false,
+			"roleName":["ALL"]
+		},
+		{
+			"title": "请假审核管理管理",
+			"icon": "&#xe639;",
+			"href": "/jump/toExperimentLeaveExamineList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		},
+		{
+			"title": "角色管理管理",
+			"icon": "&#xe640;",
+			"href": "/jump/toExperimentRoleList",
+			"spread": false,
+			"roleName":["超级管理员"]
+		},
+		{
+			"title": "角色资源管理管理",
+			"icon": "&#xe641;",
+			"href": "/jump/toExperimentRoleResList",
+			"spread": false,
+			"roleName":["超级管理员"]
+		},
+		{
+			"title": "文档租借管理",
+			"icon": "&#xe642;",
+			"href": "/jump/toExperimentFileBorrowList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		},
+		{
+			"title": "文档管理",
+			"icon": "&#xe644;",
+			"href": "/jump/toExperimentFileList",
+			"spread": false,
+			"roleName":["超级管理员","管理员","老师"]
+		}
+	]
+}
+
+

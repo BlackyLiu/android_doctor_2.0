@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.base.mapper.DoctorMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.base.bean.Doctor">
+        <id column="id" property="id" />
+        <result column="job_number" property="jobNumber" />
+        <result column="email" property="email" />
+        <result column="password" property="password" />
+        <result column="real_name" property="realName" />
+        <result column="contact_information" property="contactInformation" />
+        <result column="appointment" property="appointment" />
+        <result column="remark" property="remark" />
+        <result column="departments" property="departments" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, job_number, email, password, real_name, contact_information, appointment, remark, departments, create_time, update_time
+    </sql>
+
+</mapper>

@@ -1,0 +1,205 @@
+package ${package.Controller};
+
+
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.springframework.web.bind.annotation.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Date;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import lombok.extern.slf4j.Slf4j;
+import com.base.transfer.ResultBean;
+import com.base.transfer.PageTo;
+import ${package.Service}.${table.serviceName};
+import ${package.Entity}.${entity};
+
+#if(${restControllerStyle})
+import org.springframework.web.bind.annotation.RestController;
+#else
+import org.springframework.stereotype.Controller;
+#end
+#if(${superControllerClassPackage})
+import ${superControllerClassPackage};
+#end
+
+/**
+ * <p>
+ * ${table.comment} 模块
+ * </p>
+ */
+#if(${restControllerStyle})
+@RestController
+#else
+@Controller
+#end
+##@RequestMapping("#if(${package.ModuleName})/${package.ModuleName}#end/#if(${controllerMappingHyphenStyle})${controllerMappingHyphen}#else${table.entityPath}#end")
+@RequestMapping("${table.entityPath}")
+#if(${kotlin})
+class ${table.controllerName}#if(${superControllerClass}) : ${superControllerClass}()#end
+
+#else
+#if(${superControllerClass})
+public class ${table.controllerName} extends ${superControllerClass} {
+#else
+@Slf4j
+public class ${table.controllerName} {
+#end
+        @Autowired
+        private ${table.serviceName} ${table.entityPath}Service;
+
+##包含View关键字不会生成
+#if(!${table.entityPath.contains("View")})
+        // 新增
+        @PostMapping("/add")
+        public ResultBean add( ${entity} ${table.entityPath}) {
+#foreach($field in ${table.fields})
+#if(${field.propertyType.equals("Date")})
+                ${table.entityPath}.set${field.capitalName}(new ${field.propertyType}());
+#end
+#end
+                boolean save =${table.entityPath}Service.save(${table.entityPath});
+                log.info("调用创建接口:{},数据:{}",save,${table.entityPath});
+                return save?ResultBean.ok():ResultBean.error400();
+        }
+#end
+
+#if(!${table.entityPath.contains("View")})
+        // 更新
+        @PostMapping("/update")
+        public  ResultBean update( ${entity} ${table.entityPath}){
+#foreach($field in ${table.fields})
+#if(${field.propertyType.equals("Date")}&&${field.propertyName.contains("update")})
+                 ${table.entityPath}.set${field.capitalName}(new ${field.propertyType}());
+#end
+#end
+                boolean update = ${table.entityPath}Service.updateById(${table.entityPath});
+                log.info("调用更新接口:{},数据:{}",update,${table.entityPath});
+                return update?ResultBean.ok():ResultBean.error400();
+        }
+#end
+
+#if(!${table.entityPath.contains("View")})
+        //删除
+        @GetMapping("delete")
+        @ResponseBody
+        public ResultBean delete(Long id) {
+                boolean del = ${table.entityPath}Service.removeById(id);
+                log.info("调用删除接口:{},数据:{}",del,id);
+                return del?ResultBean.ok():ResultBean.error400();
+        }
+#end
+
+#if(!${table.entityPath.contains("View")})
+    //多项删除
+        @GetMapping("batchDelete")
+        @ResponseBody
+        public ResultBean deleteBatch(String ids) {
+                String[] array = ids.split(",");
+                boolean del = ${table.entityPath}Service.removeByIds(Arrays.asList(array));
+                log.info("调用批量删除接口:{},数据:{}",del,ids);
+                return del?ResultBean.ok():ResultBean.error400();
+        }
+#end
+
+
+        //查询所有数据
+        @GetMapping("/queryAllData")
+        public ResultBean queryAllData() {
+            QueryWrapper<${entity}> queryWrapper = new QueryWrapper<>();
+            queryWrapper.orderByDesc("create_time");
+            List<${entity}>  ${table.entityPath}s =  ${table.entityPath}Service.list(queryWrapper);
+            return ResultBean.ok(${table.entityPath}s);
+        }
+
+        //根据id查询
+        @GetMapping("/queryOne")
+        public ResultBean queryOne(Long id) {
+            ${entity}  ${table.entityPath} =   ${table.entityPath}Service.getById(id);
+            return ResultBean.ok(${table.entityPath});
+        }
+
+
+        //根据id查询
+        @GetMapping("/queryCondition")
+        public ResultBean queryCondition( ${entity} ${table.entityPath}) {
+             QueryWrapper<${entity}> queryWrapper = new QueryWrapper<>();
+             if( ${table.entityPath}!=null){
+#foreach($field in ${table.fields})
+#if(${entityLombokModel})
+    #set($upName="${field.propertyName.substring(0, 1).toUpperCase()}${field.propertyName.substring(1)}")
+#else
+    #set($upName="${field.capitalName}")
+#end
+#if(${field.propertyType.equals("String")})
+                    if(${table.entityPath}.get${upName}()!=null){
+                         queryWrapper.like("${field.name}",${table.entityPath}.get${upName}());
+                    }
+#elseif(${field.propertyType.equals("BigDecimal")}||${field.propertyType.equals("Long")}||${field.propertyType.equals("Integer")} )
+                    if(${table.entityPath}.get${upName}()!=null){
+                        queryWrapper.eq("${field.name}",${table.entityPath}.get${upName}());
+                    }
+#end
+#end
+                 }
+                 queryWrapper.orderByDesc("create_time");
+                 List<${entity}>  ${table.entityPath}s = ${table.entityPath}Service.list(queryWrapper);
+                 return ResultBean.ok(${table.entityPath}s);
+        }
+
+        @GetMapping("/countCondition")
+        public ResultBean countCondition( ${entity} ${table.entityPath}) {
+                QueryWrapper<${entity}> queryWrapper = new QueryWrapper<>();
+                if( ${table.entityPath}!=null){
+#foreach($field in ${table.fields})
+#if(${entityLombokModel})
+    #set($upName="${field.propertyName.substring(0, 1).toUpperCase()}${field.propertyName.substring(1)}")
+#else
+    #set($upName="${field.capitalName}")
+#end
+#if(${field.propertyType.equals("String")})
+                        if(${table.entityPath}.get${upName}()!=null){
+                            queryWrapper.like("${field.name}",${table.entityPath}.get${upName}());
+                        }
+#elseif(${field.propertyType.equals("BigDecimal")}||${field.propertyType.equals("Long")}||${field.propertyType.equals("Integer")} )
+                        if(${table.entityPath}.get${upName}()!=null){
+                            queryWrapper.eq("${field.name}",${table.entityPath}.get${upName}());
+                        }
+#end
+#end
+                }
+                int c = ${table.entityPath}Service.count(queryWrapper);
+                return ResultBean.ok(c);
+        }
+
+
+        //分页查询
+        @PostMapping("/page")
+        public ResultBean page( PageTo<${entity}> pageTo) {
+            QueryWrapper<${entity}> queryWrapper = new QueryWrapper<>();
+            ${entity}  ${table.entityPath} = pageTo.getObj();
+            if( ${table.entityPath}!=null){
+#foreach($field in ${table.fields})
+#if(${entityLombokModel})
+ #set($upName="${field.propertyName.substring(0, 1).toUpperCase()}${field.propertyName.substring(1)}")
+#else
+ #set($upName="${field.capitalName}")
+#end
+#if(${field.propertyType.equals("String")})
+                    if(${table.entityPath}.get${upName}()!=null){
+                         queryWrapper.like("${field.name}",${table.entityPath}.get${upName}());
+                    }
+#elseif(${field.propertyType.equals("BigDecimal")}||${field.propertyType.equals("Long")}||${field.propertyType.equals("Integer")} )
+                    if(${table.entityPath}.get${upName}()!=null){
+                         queryWrapper.eq("${field.name}",${table.entityPath}.get${upName}());
+                    }
+#end
+#end
+            }
+            queryWrapper.orderByDesc("create_time");
+            Page<${entity}> p =${table.entityPath}Service.page(new Page<>(pageTo.getPage(), pageTo.getSize()), queryWrapper);
+            return ResultBean.ok(p);
+        }
+}
+#end
+
