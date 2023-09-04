@@ -148,10 +148,10 @@ public class AppointmentActivity extends BaseActivity {
                 appointment.setAppointmentId(Config.getCurId());
                 appointment.setBeAppointmentId(item.getId());
                 final List<Appointment> d = AppointmentDao.getInstance().query(appointment);
-
+                String status = "";
                 if (d != null && d.size() > 0) {
                     Appointment appointment1 = d.get(0);
-                    String status = appointment1.getStatus();
+                    status = appointment1.getStatus();
                     helper.setText(R.id.textView, status);
                     if (status.equals("End of appointment")) {
                         helper.setViewVisibility(R.id.textView, View.INVISIBLE);
@@ -225,14 +225,17 @@ public class AppointmentActivity extends BaseActivity {
                     helper.setViewVisibility(R.id.tvIndex, View.VISIBLE);
                     helper.setText(R.id.tvIndex, currentLetter);
                 }
-                helper.getView(R.id.root).setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(AppointmentActivity.this, AppointmentInfoActivity.class);
-                        Config.appointmentInfo = item;
-                        startActivity(intent);
-                    }
-                });
+                if(!"".equals(status) && status.equals("Appointment success")){
+                    helper.getView(R.id.root).setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(AppointmentActivity.this, AppointmentInfoActivity.class);
+                            Config.appointmentInfo = item;
+                            startActivity(intent);
+                        }
+                    });
+                }
+
 //                //条目点击跳转好友信息查看界面
                 helper.getView(R.id.deleteBtn).setOnClickListener(new View.OnClickListener() {
                     @Override

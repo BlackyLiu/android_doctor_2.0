@@ -151,7 +151,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@null"
-                        android:inputType="numberDecimal"
                         android:gravity="right|center_vertical"
                         android:maxLines="2"
                         android:text="2023-08-14 09:00:00"

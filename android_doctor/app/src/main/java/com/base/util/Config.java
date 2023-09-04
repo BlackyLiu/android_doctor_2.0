@@ -10,7 +10,8 @@ public class Config {
 
     //     public  static String URL = "http://localhost:8080/";
 //    public static String URL = "http://192.168.1.108:80/";
-    public static String URL = "http://192.168.136.26:80/";
+    //public static String URL = "http://192.168.136.26:80/";
+    public static String URL = "http://192.168.56.1:80/";
 
 
     public static String role = "doctor";
